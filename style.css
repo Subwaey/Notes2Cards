@@ -122,14 +122,14 @@ button:hover {
   transition: transform 0.3s;
   margin: 50px auto;
   position: relative;
-  }
-  
-  .card:hover {
+}
+
+.card:hover {
   transform: scale(1.05);
   background-color: #2e2e2e;
-  }
-  
-  .card .card-inner {
+}
+
+.card .card-inner {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -137,9 +137,10 @@ button:hover {
   transition: transform 0.3s;
   transform-style: preserve-3d;
   backface-visibility: hidden;
-  }
-  
-  .card .card-front, .card .card-back {
+}
+
+.card .card-front,
+.card .card-back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -148,25 +149,29 @@ button:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  }
-  
-  .card .card-front {
-  transform: rotateY(0deg);
-  }
+}
 
-  .card .card-back {
-  transform: rotateY(180deg);
-  }
-  
-  .card.flipped .card-inner {
-  transform: rotateY(180deg);
-  }
-  
-  .card.flipped {
-  transform: rotateY(180deg);
-  }
-  
-  .card.flipped .card-front {
+.card .card-front {
   transform: rotateY(0deg);
-  }
+}
+
+.card .card-back {
+  transform: rotateY(180deg);
+}
+
+.card .card-back p {
+  transform: rotateY(180deg);
+}
+
+.card.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card.flipped {
+  transform: rotateY(180deg);
+}
+
+.card.flipped .card-front {
+  transform: rotateY(0deg);
+}
   
