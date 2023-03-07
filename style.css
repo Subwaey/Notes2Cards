@@ -32,7 +32,6 @@ textarea::-webkit-resizer {
   background-color: #888;
 }
 
-
 .custom-shape-divider-bottom-1678203398 {
   position: absolute;
   bottom: 0;
@@ -68,7 +67,8 @@ label {
   margin-bottom: 20px;
 }
 
-textarea, input[type="text"] {
+textarea,
+input[type="text"] {
   width: 100%;
   border: none;
   border-radius: 10px;
@@ -82,7 +82,8 @@ textarea, input[type="text"] {
   box-sizing: border-box;
 }
 
-textarea::placeholder, input[type="text"]::placeholder {
+textarea::placeholder,
+input[type="text"]::placeholder {
   color: #A0A0A0;
   font-size: 18px;
 }
