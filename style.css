@@ -6,6 +6,26 @@ body {
   overflow-x: hidden;
 }
 
+.cardsec {
+  background-color: #383b3e;
+}
+
+.spacer {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+}
+
+.layer1 {
+  aspect-ratio: 960/600;
+  top: 0;
+  z-index: -1;
+  background-image: url('./lwaves.svg');
+}
+
 textarea::-webkit-resizer {
   background-color: #222;
   border: 1px solid #444;
@@ -32,34 +52,13 @@ textarea::-webkit-resizer {
   background-color: #888;
 }
 
-.custom-shape-divider-bottom-1678203398 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1678203398 svg {
-  position: relative;
-  display: block;
-  width: calc(181% + 1.3px);
-  height: 421px;
-  transform: rotateY(180deg);
-}
-
-.custom-shape-divider-bottom-1678203398 .shape-fill {
-  fill: #2E2E2E;
-}
-
 form {
   background-color: #444;
   border-radius: 10px;
   padding: 30px;
   margin: 50px auto;
   max-width: 800px;
+  z-index: 1;
 }
 
 label {
